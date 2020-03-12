@@ -1,0 +1,146 @@
+/* use a non-serif font */
+html {
+  font-family: 'verdana', sans-serif;
+}
+
+/* get rid of the browser's default margin and padding around the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.mapboxgl-marker:hover {
+  cursor: pointer;
+}
+
+/* blue buttons with white bold text */
+.flyto-button {
+  background: #009933;
+  color: #FFF;
+  padding: 11px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom:15px;
+}
+
+/* on hover, make the background darker and turn the cursor to a pointer */
+button:hover {
+  cursor: pointer;
+  background-color: #006987;
+}
+
+#feature-info {
+  background: #6baed6;
+  padding: 15px;
+  min-height: 150px;
+}
+
+/* sidebar is a botton-sidebar with and positioned to the left */
+#sidebar {
+position: absolute;
+top: 15px;
+left: 15px;
+bottom: 15px;
+width: 350px;
+overflow: auto;
+background: rgba(255, 255, 255, 0.8);
+font-family: "Arial";
+padding-left: 10px;
+}
+
+/* absolute position the map container as full screen, leaving 300 pixels on the left */
+#map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 400px;
+}
+
+.marker {
+  background-image: url('../img/wa.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 100px;
+}
+
+.mapboxgl-popup-content {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.geocoder {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  left: 80%;
+  margin-left: -25%;
+  top: 10px;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 100%
+}
+
+.filter-group {
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  width: 120px;
+  color: #fff;
+}
+
+.filter-group input[type='checkbox']:first-child + label {
+  border-radius: 3px 3px 0 0;
+}
+
+.filter-group label:last-child {
+  border-radius: 0 0 3px 3px;
+  border: none;
+}
+
+.filter-group input[type='checkbox'] {
+  display: none;
+}
+
+.filter-group input[type='checkbox'] + label {
+  background-color: #3386c0;
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filter-group input[type='checkbox'] + label {
+  background-color: #3386c0;
+  text-transform: capitalize;
+}
+
+.filter-group input[type='checkbox'] + label:hover,
+.filter-group input[type='checkbox']:checked + label {
+  background-color: #4ea0da;
+}
+
+.filter-group input[type='checkbox']:checked + label:before {
+  content: '✔';
+  margin-right: 5px;
+}
+
+font-family: 'Spartan', sans-serif;
